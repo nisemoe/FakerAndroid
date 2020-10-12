@@ -9,7 +9,7 @@ A tool transfer a apk file to android project and support so hook include il2cpp
 - 对于il2cpp的游戏apk直接生成il2cpp c++脚手架
 - 无限的可能和延展性
 
-### 开发运行环境
+### 运行环境
 - IDEA
 ### 入口程序
 - com.facker.toolchain.FakerMain
