@@ -10,7 +10,7 @@ A tool transfer a apk file to android project and support so hook include il2cpp
 - 无限的可能和延展性
 
 ### 运行环境
-- IDEA
+- IntelliJ IDEA
 ### 入口程序
 - com.facker.toolchain.FakerMain
 ### 调用示例
