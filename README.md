@@ -20,7 +20,7 @@ A tool transfer a apk file to android project and support so hook include il2cpp
 ##### 1、打开项目
       - Android studio直接打开工具生成的Android项目
 ##### 2、安装FakerAndroid-Idea插件
-      - 插件地址https://github.com/Efaker/FakerAndroid-Idea/releases/tag/0.0.1
+      - 插件地址https://github.com/Efaker/FakerAndroid-Idea/releases/tag/FakerAndroid-Idea0.0.1
       - 安装教程AndroidStudio File->Settings->plugins->setting->install from disk->重新启动AndroidStudio
 ##### 3、调试运行项目
       - AndroidStudio->build->FakeSmali->等待smali文件构建完成
