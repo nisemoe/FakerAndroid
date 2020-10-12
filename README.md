@@ -7,6 +7,7 @@ A tool transfer a apk file to android project and support so hook include il2cpp
 - 提供Java层代码覆盖及继承替换的脚手架
 - 提供so函数Hook Api
 - 对于il2cpp的游戏apk直接生成il2cpp c++脚手架
+- 无限的可能和延展性
 
 ### 开发运行环境
 - IDEA
