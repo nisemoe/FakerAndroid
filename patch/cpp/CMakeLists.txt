@@ -21,7 +21,7 @@ add_library(
 set_target_properties(
         swap #最终在build中生成的so名字
         PROPERTIES IMPORTED_LOCATION
-        ../../../../src/main/jniLibs/armeabi-v7a/libswap.so) #so
+        ../../../../src/main/jniLibs/${ANDROID_ABI}/libswap.so) #so
 add_library(
         faker #最终在build中生成的so名字
         SHARED
@@ -29,7 +29,7 @@ add_library(
 set_target_properties(
         faker #最终在build中生成的so名字
         PROPERTIES IMPORTED_LOCATION
-        ../../../../src/main/jniLibs/armeabi-v7a/libfaker.so) #so
+        ../../../../src/main/jniLibs/${ANDROID_ABI}/libfaker.so) #so
 
 add_library( # Sets the name of the library.
         native-lib

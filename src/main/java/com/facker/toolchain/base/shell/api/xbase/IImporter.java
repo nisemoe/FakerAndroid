@@ -27,6 +27,8 @@ public abstract class IImporter {
 
 	abstract boolean modManifest(SourceCode sourceCode,XSrcTarget xSrcTarget) throws IOException;
 
+	abstract boolean fixRes(SourceCode sourceCode,XSrcTarget xSrcTarget) throws IOException;
+
 	//TODO
 	protected IImporter(XSrcTarget xSrcTarget,SourceCode sourceCode) {
 		this.xSrcTarget = xSrcTarget;
@@ -59,6 +61,9 @@ public abstract class IImporter {
 			return;
 		}
 		if(!modManifest(sourceCode,xSrcTarget)){
+			return;
+		}
+		if(!fixRes(sourceCode,xSrcTarget)){
 			return;
 		}
 

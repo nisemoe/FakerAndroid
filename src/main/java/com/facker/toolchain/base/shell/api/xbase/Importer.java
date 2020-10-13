@@ -6,6 +6,7 @@ import com.facker.toolchain.utils.IOUtil;
 import org.dom4j.DocumentException;
 
 import java.io.*;
+import java.util.HashMap;
 
 public class Importer extends IImporter {
 
@@ -172,7 +173,60 @@ public class Importer extends IImporter {
         } catch (DocumentException e) {
             e.printStackTrace();
         }
-        return false;
+        return true;
+    }
+
+    @Override
+    boolean fixRes(SourceCode sourceCode, XSrcTarget xSrcTarget) throws IOException {
+
+        File fileRes = xSrcTarget.getResDir();
+        func(fileRes,fileRes);
+
+
+        return true;
+    }
+    private static void func(File res,File file){
+        File[] fs = file.listFiles();
+        for(File f:fs){
+            if(f.isDirectory())	//若是目录，则递归打印该目录下的文件
+                func(res,f);
+            if(f.isFile()){
+                System.out.println(f);
+                if(f.getName().startsWith("$")){
+                    File fixName = new File(f.getParent(),f.getName().replace("$",""));
+                    funcRe(res,getFileNameNoEx(f.getName()),getFileNameNoEx(fixName.getName()));
+                    f.renameTo(fixName);
+                }
+            }
+        }
+    }
+    /*
+     * Java文件操作 获取不带扩展名的文件名
+     * */
+    public static String getFileNameNoEx(String filename) {
+        if ((filename != null) && (filename.length() > 0)) {
+            int dot = filename.lastIndexOf('.');
+            if ((dot >-1) && (dot < (filename.length()))) {
+                return filename.substring(0, dot);
+            }
+        }
+        return filename;
+    }
+    private static void funcRe(File file,String oStr,String nStr){
+        File[] fs = file.listFiles();
+        for(File f:fs){
+            if(f.isDirectory())	//若是目录，则递归打印该目录下的文件
+                funcRe(f,oStr,nStr);
+            if(f.isFile()){
+                try {
+                    if(f.getName().endsWith(".xml")){
+                        FileUtil.autoReplaceStr(f,oStr,nStr);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     private void formatScaffolding(File scaffolding) throws IOException {
