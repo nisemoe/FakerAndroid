@@ -1,3 +1,4 @@
+
 # FakerAndroid
 A tool transfer a apk file to android project and support so hook include il2cpp c++ scaffolding
 ## 简介
@@ -23,9 +24,9 @@ A tool transfer a apk file to android project and support so hook include il2cpp
 ##### 1、打开项目
       - Android studio直接打开工具生成的Android项目
       - 存在已知缺陷，res下的部分资源文件编译不过，需要手动修复，部分Manifest标签无法编译需要手动修复
-##### 2、安装FakerAndroid-Idea插件
-      - [插件地址] (https://github.com/Efaker/FakerAndroid-Idea/releases/tag/FakerAndroid-Idea0.0.1)
-      - 安装教程AndroidStudio File->Settings->plugins->setting->install from disk->重新启动AndroidStudio
+##### 2、AndroidStudio安装FakerAndroid-Idea插件
+- [下载地址](https://github.com/Efaker/FakerAndroid-Idea/releases/tag/FakerAndroid-Idea0.0.1)
+- 安装教程AndroidStudio File->Settings->plugins->setting->install from disk->重新启动AndroidStudio
 ##### 3、调试运行项目
       - AndroidStudio->build->FakeSmali->等待smali文件构建完成
       - Run 项目（提醒：DEX缓存原因，修改smali文件后调试运行需要先卸载手机调试包）
