@@ -28,16 +28,16 @@ A tool transfer a apk file to android project and support so hook include il2cpp
 - [下载地址](https://github.com/Efaker/FakerAndroid-Idea/releases/tag/FakerAndroid-Idea0.0.1)
 - 安装教程AndroidStudio File->Settings->plugins->setting->install from disk->重新启动AndroidStudio
 ##### 3、调试运行项目
-      - AndroidStudio->build->FakeSmali->等待smali文件构建完成
-      - Run 项目（提醒：DEX缓存原因，修改smali文件后调试运行需要先卸载手机调试包）
+- AndroidStudio->build->FakeSmali->等待smali文件构建完成
+- Run 项目（提醒：DEX缓存原因，修改smali文件后调试运行需要先卸载手机调试包）
 ##### 4、进阶
-      - smali 类继承
-      - smali 类替换
-      - so 函数 hook
-      - il2cpp 脚手架的使用
+- smali 类继承
+- smali 类替换
+- so 函数 hook
+- il2cpp 脚手架的使用
 ##### 5、遇到问题了？兄弟别走肯定能用，而且是你最佳的解决方案，咨询探讨
-      - QQ:1404774249
-      - issues(在线解决) 
+- QQ:1404774249
+- issues(在线解决) 
 ##### 6、给个star?免费的           
         
         
