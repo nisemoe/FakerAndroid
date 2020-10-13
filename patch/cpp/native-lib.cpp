@@ -79,13 +79,9 @@ Il2CppObject *HookedIl2cpp_runtime_invoke(const MethodInfo * method, void *obj, 
 }
 
 extern "C"
-JNIEXPORT jobject JNICALL
-Java_com_faker_android_FakerApp_fakeApp(JNIEnv *env, jobject thiz, jobject application) {
-    if(strcmp(APPLICATION_NAME,"")==0){
-        return fakeApp(env,thiz,application,NULL);
-    }
-    string *sx = new std::string(APPLICATION_NAME);
-    return fakeApp(env,thiz,application,sx);
+JNIEXPORT void JNICALL
+Java_com_faker_android_FakerApp_fakeApp(JNIEnv *env, jobject thiz, jobject application,jboolean b) {
+    return fakeApp(env,thiz,application,b);
 }
 extern "C"
 JNIEXPORT void JNICALL
@@ -93,7 +89,7 @@ Java_com_faker_android_FakerApp_fakeDex(JNIEnv *env, jobject thiz, jobject base)
     fakeDex(env,thiz,base,"target.dfk");//安装DEX
 }extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_faker_android_FackerActivity_init(JNIEnv *env, jobject thiz) {//替换函数
+Java_com_faker_android_FakerUnityActivity_init(JNIEnv *env, jobject thiz) {//替换函数
     tmpAct = env->NewGlobalRef(thiz);
     long base = baseAddr("libil2cpp.so");
 

@@ -74,7 +74,7 @@ public class Importer extends IImporter {
             ManifestEditor manifestEditor = new ManifestEditor(xSrcTarget.getManifestFile());
             FileUtil.autoReplaceStr(gameBuildGrandle,"{pkg}",manifestEditor.getPackagenName());
 
-            File MainA = new File(xSrcTarget.getJava(),"com\\faker\\android\\FackerActivity.java");
+            File MainA = new File(xSrcTarget.getJava(),"com\\faker\\android\\FakerUnityActivity.java");
 
             FileUtil.autoReplaceStr(MainA,"{R}",manifestEditor.getPackagenName()+".R");
 
@@ -162,7 +162,7 @@ public class Importer extends IImporter {
         try {
             ManifestEditor manifestEditor = new ManifestEditor(xSrcTarget.getManifestFile());
             String applicationName = manifestEditor.getApplicationName();
-            File file  = new File (xSrcTarget.getCpp(),"Constant.h");
+            File file  = new File (xSrcTarget.getJava(),"com\\faker\\android\\FakerApp.java");
             if(!TextUtil.isEmpty(applicationName)){
                 FileUtil.autoReplaceStr(file,"{APPLICATION_NAME}",applicationName);
             }else {

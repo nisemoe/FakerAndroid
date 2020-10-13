@@ -1,3 +1,4 @@
+
 void onJniLoad(JavaVM *vm, void *reserved);
 /**
  * 安装修改后合并的DEX
@@ -16,7 +17,7 @@ void fakeDex(JNIEnv *env, jobject instance,jobject base,char *fakeDexAssetFileNa
  * @param targetApp  原应用的Application名称
  * @return
  */
-jobject fakeApp(JNIEnv *env, jobject instance,jobject application,string* targetApp);
+void fakeApp(JNIEnv *env, jobject instance,jobject application,jboolean b);
 
 /**
  * 获取So文件 基础地址

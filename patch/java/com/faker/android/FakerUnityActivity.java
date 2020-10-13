@@ -8,11 +8,11 @@ import android.view.KeyEvent;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Toast;
-import {R};
+import com.rolling.icecream.R;
 import org.json.JSONObject;
 import java.util.Map;
 
-public class FackerActivity extends com.unity3d.player.UnityPlayerActivity {
+public class FakerUnityActivity extends com.unity3d.player.UnityPlayerActivity {
     public native String init();
     static final int HANDLER_MSG_CALLJAVA = 1000;
     final Handler handler = new Handler(Looper.getMainLooper()) {

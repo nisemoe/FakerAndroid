@@ -69,16 +69,16 @@ public class JavaPatch {//you can refector this class by you needed
         UnityPlayer.UnitySendMessage("GAME CONTROLLER","ResetGame","");
     }
     public static void goToPrivacyPage(Context context) {
-        Intent intent = new Intent(context,WebViewActivity.class);
-        intent.putExtra("url","http://ianpei.com/policy/privacy");
-        intent.putExtra("title","隐私政策");
-        context.startActivity(intent);
+//        Intent intent = new Intent(context,WebViewActivity.class);
+//        intent.putExtra("url","http://ianpei.com/policy/privacy");
+//        intent.putExtra("title","隐私政策");
+//        context.startActivity(intent);
     }
     public static void goToTermsPage(Context context) {
-        Intent intent = new Intent(context,WebViewActivity.class);
-        intent.putExtra("url","https://ianpei.com/policy/agreement");
-        intent.putExtra("title","服务协议");
-        context.startActivity(intent);
+//        Intent intent = new Intent(context,WebViewActivity.class);
+//        intent.putExtra("url","https://ianpei.com/policy/agreement");
+//        intent.putExtra("title","服务协议");
+//        context.startActivity(intent);
     }
 
     public static void goToMoreGame(Context context) {

@@ -84,7 +84,9 @@ public class Packer {
         return file.renameTo(srcFile);
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
+        Packer packer = new Packer(new File("C:\\Users\\Yang\\Desktop\\xg\\demo\\build\\outputs\\apk\\debug\\demo-debug\\dex"));
+        packer.addFile("k1.dex",new File("C:\\Users\\Yang\\Desktop\\xg\\demo\\build\\outputs\\apk\\debug\\demo-debug\\classes.dex"));
+        packer.saveToPath();
     }
 }
