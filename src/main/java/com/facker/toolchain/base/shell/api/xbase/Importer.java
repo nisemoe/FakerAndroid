@@ -75,8 +75,10 @@ public class Importer extends IImporter {
             FileUtil.autoReplaceStr(gameBuildGrandle,"{pkg}",manifestEditor.getPackagenName());
 
             File MainA = new File(xSrcTarget.getJava(),"com\\faker\\android\\FakerUnityActivity.java");
-
             FileUtil.autoReplaceStr(MainA,"{R}",manifestEditor.getPackagenName()+".R");
+
+            File MainW = new File(xSrcTarget.getJava(),"com\\faker\\android\\WebViewActivity.java");
+            FileUtil.autoReplaceStr(MainW,"{R}",manifestEditor.getPackagenName()+".R");
 
         } catch (DocumentException e) {
             e.printStackTrace();

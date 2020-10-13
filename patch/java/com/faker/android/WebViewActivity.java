@@ -5,7 +5,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
-import com.harvest.io.R;
+import {R};
 public class WebViewActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

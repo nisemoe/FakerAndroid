@@ -20,33 +20,9 @@ import java.io.StringReader;
 import java.lang.reflect.Method;
 
 public class JavaPatch {//you can refector this class by you needed
-    public static  boolean onKeyDown(Activity activity ,int keyCode, KeyEvent event)   {
+    public static boolean onKeyDown(Activity activity ,int keyCode, KeyEvent event)   {
         if(keyCode==KeyEvent.KEYCODE_BACK) {
-            if(activity.getPackageName().endsWith(".nearme.gamecenter")){
-                try {
-                    Log.i("UnityPlayerActivity","调用返回键");
-                    Class<?> threadClazz = Class.forName("com.nearme.offlinesdk.bridge.LocalBridge");
-                    Method method = threadClazz.getMethod("backDown", Activity.class);
-                    method.invoke(null,activity);
-                } catch (Exception e) {
-                    Log.i("UnityPlayerActivity","返回键反射调用失败");
-                    e.printStackTrace();
-                }
-                return true;
-            }
-
-            if(activity.getPackageName().endsWith(".vivo")){
-                try {
-                    Log.i("UnityPlayerActivity","调用返回键");
-                    Class<?> threadClazz = Class.forName("com.vivo.offline.bridge.LocalBridge");
-                    Method method = threadClazz.getMethod("backDown", Activity.class);
-                    method.invoke(null,activity);
-                } catch (Exception e) {
-                    Log.i("UnityPlayerActivity","返回键反射调用失败");
-                    e.printStackTrace();
-                }
-                return true;
-            }
+            //im
         }
         return false;
     }
@@ -69,37 +45,20 @@ public class JavaPatch {//you can refector this class by you needed
         UnityPlayer.UnitySendMessage("GAME CONTROLLER","ResetGame","");
     }
     public static void goToPrivacyPage(Context context) {
-//        Intent intent = new Intent(context,WebViewActivity.class);
-//        intent.putExtra("url","http://ianpei.com/policy/privacy");
-//        intent.putExtra("title","隐私政策");
-//        context.startActivity(intent);
     }
     public static void goToTermsPage(Context context) {
-//        Intent intent = new Intent(context,WebViewActivity.class);
-//        intent.putExtra("url","https://ianpei.com/policy/agreement");
-//        intent.putExtra("title","服务协议");
-//        context.startActivity(intent);
     }
 
     public static void goToMoreGame(Context context) {
-        if(context.getPackageName().endsWith(".nearme.gamecenter")){
-            try {
-                Log.i("UnityPlayerActivity","moreGame");
-                Class<?> threadClazz = Class.forName("com.nearme.offlinesdk.bridge.LocalBridge");
-                Method method = threadClazz.getMethod("moreGame");
-                method.invoke(null);
-            } catch (Exception e) {
-                Log.i("UnityPlayerActivity","moregame 反射调用失败");
-                e.printStackTrace();
-            }
-        }
     }
     public static void rateUs(Context context) {
-        Uri uri = Uri.parse("market://details?id=" + context.getPackageName());
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(intent);
     }
+
+    /**
+     * 初始化游戏 playerprefs数据存储文件
+     * @param context
+     * @param fileName
+     */
     public static void coverPlayerprefs(Context context,String fileName) {
         try {
 

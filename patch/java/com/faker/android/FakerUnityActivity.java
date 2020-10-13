@@ -8,7 +8,7 @@ import android.view.KeyEvent;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Toast;
-import com.rolling.icecream.R;
+import {R};
 import org.json.JSONObject;
 import java.util.Map;
 
@@ -36,6 +36,8 @@ public class FakerUnityActivity extends com.unity3d.player.UnityPlayerActivity {
         init();
         //Init playerprefs if you need
         JavaPatch.coverPlayerprefs(this,"init.xml");
+
+
         imageView = new ImageView(this);
         imageView.setImageResource(R.drawable.splash);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
@@ -49,25 +51,6 @@ public class FakerUnityActivity extends com.unity3d.player.UnityPlayerActivity {
         },3000);
     }
 
-    public void onResult(Context context, Map<String,String> result){
-        JSONObject jsonObject = new JSONObject(result);
-        //TODO 加金币
-        String feature = result.get("feature");
-        if("feature_reward".equals(feature)){
-            //UnityPlayer.UnitySendMessage("GameManager","ShowInterstital","");
-            JavaPatch.addCoin();
-        }
-        if("feature_reward_failed".equals(feature)){
-            Toast.makeText(context,"暂无视频内容",Toast.LENGTH_SHORT).show();
-        }
-        String erro = result.get("erro");
-        if(erro!=null&&erro.equals("100")){
-            String flipTag = result.get("flipTag");
-            if(flipTag!=null&&flipTag.startsWith("msg_trigger_tag_reward")){
-                Toast.makeText(context,"暂无视频内容",Toast.LENGTH_SHORT).show();
-            }
-        }
-    }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event)   {
         if(keyCode==KeyEvent.KEYCODE_BACK) {
