@@ -257,6 +257,17 @@ public class Importer extends IImporter {
             IOUtil.copyFile(new File(sourceCode.getScaffolding_cpp(),"MonoString.h"),new File(scaffolding,"MonoString.h"));
             IOUtil.copyFile(new File(sourceCode.getScaffolding_cpp(),"MonoString.cpp"),new File(scaffolding,"MonoString.cpp"));
 
+
+            File file1 = new File(xSrcTarget.getDecodeDir(),"kotlin");
+            delete(file1);
+            File file2 = new File(xSrcTarget.getDecodeDir(),"META-INF");
+            delete(file2);
+
+            File file3 = new File(xSrcTarget.getDecodeDir(),"original");
+            delete(file3);
+
+            File file4 = new File(xSrcTarget.getDecodeDir(),"unknown");
+            delete(file4);
         }
     }
 

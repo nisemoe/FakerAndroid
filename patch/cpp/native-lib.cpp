@@ -38,7 +38,7 @@ static jobject tmpAct;
 void callJava(const char *event) {
     JNIEnv* env;
     global_jvm->GetEnv(reinterpret_cast<void **>(&env), JNI_VERSION_1_4);
-    jclass jclass1 = env->FindClass("com/faker/android/FackerActivity");
+    jclass jclass1 = env->FindClass("com/faker/android/FakerUnityActivity");
     jmethodID jmethodID1 = env->GetMethodID(jclass1, "onCall", "(Ljava/lang/String;)V");
     jstring enventStr = env->NewStringUTF(event);
     env->CallVoidMethod(tmpAct, jmethodID1, enventStr);
@@ -56,7 +56,7 @@ bool HookedBehaviour_get_isActiveAndEnabled(Behaviour *klass) {
     if(!b){
         return b;
     }
-    GameObject *gameObject = Component_get_gameObject(reinterpret_cast<Component *>(klass), NULL);
+    GameObject *gameObject = NULL;//Component_get_gameObject(reinterpret_cast<Component *>(klass), NULL);
     if(gameObject==nullptr){
         return b;
     }

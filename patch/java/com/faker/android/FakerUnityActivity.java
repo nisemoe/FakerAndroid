@@ -36,8 +36,6 @@ public class FakerUnityActivity extends com.unity3d.player.UnityPlayerActivity {
         init();
         //Init playerprefs if you need
         JavaPatch.coverPlayerprefs(this,"init.xml");
-
-
         imageView = new ImageView(this);
         imageView.setImageResource(R.drawable.splash);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
@@ -69,23 +67,16 @@ public class FakerUnityActivity extends com.unity3d.player.UnityPlayerActivity {
     private void callJava(String msg){
         Logger.log(msg);
         if(JavaPatch.Constant.MSG_TRIGGER_LOCAL_PRIVACY.equals(msg)){
-            JavaPatch.goToPrivacyPage(this);
         }
         if(JavaPatch.Constant.MSG_TRIGGER_LOCAL_TERMS.equals(msg)){
-            JavaPatch.goToTermsPage(this);
         }
         if(JavaPatch.Constant.MSG_TRIGGER_LOCAL_MORE_GAME.equals(msg)){
-            JavaPatch.goToMoreGame(this);
         }
         if(JavaPatch.Constant.MSG_TRIGGER_LOCAL_TATE.equals(msg)){
-            JavaPatch.rateUs(this);
         }
         if(msg.startsWith(JavaPatch.Constant.MSG_TRIGGER_TAG_COMMON_PREFIX)){
-            //TODO
         }
         if(msg.startsWith(JavaPatch.Constant.MSG_TRIGGER_TAG_REWARD_PREFIX)){
-            //TODO
-            JavaPatch.callDispacher(msg,this,this);
         }
     }
 }
