@@ -32,7 +32,7 @@ A tool transfer a apk file to android project and support so hook include il2cpp
       - smali 类替换
       - so 函数 hook
       - il2cpp 脚手架的使用
-##### 5、咨询探讨
+##### 5、遇到问题了？兄弟别走肯定能用，而且是你最佳的解决方案，咨询探讨
       - QQ:1404774249
       - issues(在线解决) 
 ##### 6、给个star?免费的           
