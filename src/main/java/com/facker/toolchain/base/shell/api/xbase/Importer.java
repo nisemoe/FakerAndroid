@@ -1,12 +1,11 @@
 package com.facker.toolchain.base.shell.api.xbase;
+import brut.androlib.meta.MetaInfo;
 import com.facker.toolchain.base.shell.api.Logger;
 import com.facker.toolchain.utils.FileUtil;
 import com.facker.toolchain.utils.IOUtil;
 import org.dom4j.DocumentException;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+import java.io.*;
 
 public class Importer extends IImporter {
 
@@ -72,10 +71,30 @@ public class Importer extends IImporter {
 
         try {
             ManifestEditor manifestEditor = new ManifestEditor(xSrcTarget.getManifestFile());
-            FileUtil.autoReplaceStr(gameBuildGrandle,"{pkg}",manifestEditor.getPackagenName()+".publish");
+            FileUtil.autoReplaceStr(gameBuildGrandle,"{pkg}",manifestEditor.getPackagenName());
+
+            File MainA = new File(xSrcTarget.getJava(),"com\\faker\\android\\FackerActivity.java");
+
+            FileUtil.autoReplaceStr(MainA,"{R}",manifestEditor.getPackagenName()+".R");
+
         } catch (DocumentException e) {
             e.printStackTrace();
         }
+
+        MetaInfo metaInfo = null;
+        try {
+            metaInfo = MetaInfo.load(new FileInputStream(xSrcTarget.getYmlFile()));
+        } catch (FileNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        FileUtil.autoReplaceStr(gameBuildGrandle,"{versionCode}",metaInfo.versionInfo.versionCode);
+        FileUtil.autoReplaceStr(gameBuildGrandle,"{versionName}",metaInfo.versionInfo.versionName);
+        String minSdkVersion = metaInfo.sdkInfo.get("minSdkVersion");
+        //FileUtil.autoReplaceStr(gameBuildGrandle,"{minSdkVersion}",minSdkVersion);
+        String targetSdkVersion =metaInfo.sdkInfo.get("targetSdkVersion");
+        FileUtil.autoReplaceStr(gameBuildGrandle,"{targetSdkVersion}",targetSdkVersion);
+
+
 
         IOUtil.copyDir(sourceCode.getBuildProject(),xSrcTarget.getProjectDir());
 
@@ -123,6 +142,39 @@ public class Importer extends IImporter {
         return true;
     }
 
+    @Override
+    boolean mergeFaker(SourceCode sourceCode, XSrcTarget xSrcTarget) throws IOException {
+        File targetjniLibs = xSrcTarget.getjniLibs();
+        File jniLibsARMV7A = new File(targetjniLibs,"armeabi-v7a");
+        if(jniLibsARMV7A.exists()){
+            IOUtil.copyDir(new File(sourceCode.getJniLibs(),"armeabi-v7a"),jniLibsARMV7A);
+        }
+        File jniLibsARM64V8A = new File(targetjniLibs,"arm64-v8a");
+        if(jniLibsARM64V8A.exists()){
+            IOUtil.copyDir(new File(sourceCode.getJniLibs(),"armeabi-v7a"),jniLibsARM64V8A);
+        }
+        return true;
+    }
+
+    @Override
+    boolean modManifest(SourceCode sourceCode, XSrcTarget xSrcTarget) throws IOException {
+        try {
+            ManifestEditor manifestEditor = new ManifestEditor(xSrcTarget.getManifestFile());
+            String applicationName = manifestEditor.getApplicationName();
+            File file  = new File (xSrcTarget.getCpp(),"Constant.h");
+            if(!TextUtil.isEmpty(applicationName)){
+                FileUtil.autoReplaceStr(file,"{APPLICATION_NAME}",applicationName);
+            }else {
+                FileUtil.autoReplaceStr(file,"{APPLICATION_NAME}","");
+            }
+            manifestEditor.modApplication("com.faker.android.FakerApp");//动态
+            manifestEditor.save();
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     private void formatScaffolding(File scaffolding) throws IOException {
         if(scaffolding.exists()&&scaffolding.isDirectory()){
             File scaffolding_ARM_spam[] =scaffolding.listFiles();
@@ -146,6 +198,9 @@ public class Importer extends IImporter {
             IOUtil.copyFile(new File(sourceCode.getScaffolding_cpp(),"il2cpp-init.cpp"),new File(scaffolding,"il2cpp-init.cpp"));
             IOUtil.copyFile(new File(sourceCode.getScaffolding_cpp(),"il2cpp-init.h"),new File(scaffolding,"il2cpp-init.h"));
             IOUtil.copyFile(new File(sourceCode.getScaffolding_cpp(),"il2cpp-appdata.h"),new File(scaffolding,"il2cpp-appdata.h"));
+            IOUtil.copyFile(new File(sourceCode.getScaffolding_cpp(),"MonoString.h"),new File(scaffolding,"MonoString.h"));
+            IOUtil.copyFile(new File(sourceCode.getScaffolding_cpp(),"MonoString.cpp"),new File(scaffolding,"MonoString.cpp"));
+
         }
     }
 
@@ -170,6 +225,7 @@ public class Importer extends IImporter {
     }
 
     public static void exportCppScaffolding (XSrcTarget xSrcTarget) {
+
 
         File fileScaffoldingHelper =  new File(xSrcTarget.getCpp(),"ScaffoldingHelper");
         fileScaffoldingHelper.mkdir();

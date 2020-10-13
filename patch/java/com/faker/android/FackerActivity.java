@@ -8,7 +8,7 @@ import android.view.KeyEvent;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Toast;
-import com.harvest.io.R;
+import {R};
 import org.json.JSONObject;
 import java.util.Map;
 

@@ -23,6 +23,10 @@ public abstract class IImporter {
 
 	abstract boolean makeJavaScaffolding(SourceCode sourceCode,XSrcTarget xSrcTarget) throws IOException;
 
+	abstract boolean mergeFaker(SourceCode sourceCode,XSrcTarget xSrcTarget) throws IOException;
+
+	abstract boolean modManifest(SourceCode sourceCode,XSrcTarget xSrcTarget) throws IOException;
+
 	//TODO
 	protected IImporter(XSrcTarget xSrcTarget,SourceCode sourceCode) {
 		this.xSrcTarget = xSrcTarget;
@@ -51,5 +55,12 @@ public abstract class IImporter {
 		if(!makeJavaScaffolding(sourceCode,xSrcTarget)){
 			return;
 		}
+		if(!mergeFaker(sourceCode,xSrcTarget)){
+			return;
+		}
+		if(!modManifest(sourceCode,xSrcTarget)){
+			return;
+		}
+
 	}
 }

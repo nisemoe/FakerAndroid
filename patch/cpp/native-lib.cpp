@@ -81,12 +81,16 @@ Il2CppObject *HookedIl2cpp_runtime_invoke(const MethodInfo * method, void *obj, 
 extern "C"
 JNIEXPORT jobject JNICALL
 Java_com_faker_android_FakerApp_fakeApp(JNIEnv *env, jobject thiz, jobject application) {
-    //string *sx = new std::string("");
-    return fakeApp(env,thiz,application,NULL);
-}extern "C"
+    if(strcmp(APPLICATION_NAME,"")==0){
+        return fakeApp(env,thiz,application,NULL);
+    }
+    string *sx = new std::string(APPLICATION_NAME);
+    return return fakeApp(env,thiz,application,sx);
+}
+extern "C"
 JNIEXPORT void JNICALL
 Java_com_faker_android_FakerApp_fakeDex(JNIEnv *env, jobject thiz, jobject base) {
-    fakeDex(env,thiz,base,"target.dfk");//安装DEX
+    fakeDex(env,thiz,base,TARGET_FK);//安装DEX
 }extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_faker_android_FackerActivity_init(JNIEnv *env, jobject thiz) {//替换函数
