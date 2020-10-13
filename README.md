@@ -16,7 +16,7 @@ A tool translate apk file to common android project and support so hook and incl
 - IntelliJ IDEA
 ### 入口程序
 - com.facker.toolchain.FakerMain
-### 调用示例
+### 使用方式
 - ```FakerTransfer.translate(apkFilePath);```
 - AndroidStudio 项目生成路径为Apk平级目录
 ### 生成的Android项目二次开发教程
