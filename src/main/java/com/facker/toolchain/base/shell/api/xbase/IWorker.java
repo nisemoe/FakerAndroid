@@ -5,10 +5,6 @@ import com.facker.toolchain.utils.ApkUtils;
 
 import java.util.List;
 
-/**
- * 基本操作由work完成
- * @author Yang
- */
 public abstract class IWorker {
 	protected static String TAG = "Worker";
 	protected XBridge xBridge;

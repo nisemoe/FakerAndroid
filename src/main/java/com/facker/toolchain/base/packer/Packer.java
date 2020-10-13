@@ -85,8 +85,8 @@ public class Packer {
     }
 
     public static void main(String[] args) throws IOException {
-        Packer packer = new Packer(new File("C:\\Users\\Yang\\Desktop\\xg\\demo\\build\\outputs\\apk\\debug\\demo-debug\\dex"));
-        packer.addFile("k1.dex",new File("C:\\Users\\Yang\\Desktop\\xg\\demo\\build\\outputs\\apk\\debug\\demo-debug\\classes.dex"));
+        Packer packer = new Packer(new File("C:\\Users\\Efaker\\Desktop\\demo\\build\\outputs\\apk\\debug\\demo-debug\\dex"));
+        packer.addFile("k1.dex",new File("C:\\Users\\Efaker\\Desktop\\demo\\build\\outputs\\apk\\debug\\demo-debug\\classes.dex"));
         packer.saveToPath();
     }
 }

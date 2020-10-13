@@ -2,10 +2,6 @@ package com.facker.toolchain.base.shell.api.xbase;
 
 import com.facker.toolchain.base.shell.api.Logger;
 import java.io.IOException;
-/**
- * 基本操作由work完成
- * @author Yang
- */
 public abstract class IImporter {
 	protected static String TAG = "Importer";
 	protected XSrcTarget xSrcTarget;

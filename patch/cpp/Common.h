@@ -1,6 +1,3 @@
-//
-// Created by Yang on 2020/9/6.
-//
 #include <android/log.h>
 #define LOG_TAG "xNative"
 #define DEBUG
