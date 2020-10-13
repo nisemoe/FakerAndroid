@@ -1,14 +1,15 @@
 # FakerAndroid
 A tool transfer a apk file to android project and support so hook include il2cpp c++ scaffolding
 ## 简介
--直接将Apk文件转换为可以进行二次开发的Android项目的工具,支持so hook,对于il2cpp的游戏apk直接生成il2cpp c++脚手架
--将痛苦的逆向环境，转化为舒服的开发环境，还有啥好说的~~！
+- 直接将Apk文件转换为可以进行二次开发的Android项目的工具,支持so hook,对于il2cpp的游戏apk直接生成il2cpp c++脚手架
+- 将痛苦的逆向环境，转化为舒服的开发环境，还有啥好说的~~！
 ## 特点
+
 - 基于AndroidStudio进行smali修改编译
 - 提供Java层代码覆盖及继承替换的脚手架
 - 提供so函数Hook Api
 - 对于il2cpp的游戏apk直接生成il2cpp c++脚手架
-- 无限的可能和延展性
+- 无限的可能性和扩展性,能干啥你说了算~
 
 ### 运行环境
 - IntelliJ IDEA
