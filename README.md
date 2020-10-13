@@ -16,7 +16,7 @@ A tool transfer a apk file to android project and support so hook include il2cpp
 ### 调用示例
 - ```FakerTransfer.translate(apkFilePath);```
 - AndroidStudio 项目生成路径为Apk平级目录
-### 项目二次开发教程
+### 生成的Android项目二次开发教程
 
 ##### 1、打开项目
       - Android studio直接打开工具生成的Android项目
