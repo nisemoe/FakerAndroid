@@ -9,7 +9,6 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Toast;
 import {R};
-import org.json.JSONObject;
 import java.util.Map;
 public class FakerActivity extends Activity {
     public native String init();

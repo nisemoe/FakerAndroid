@@ -1,5 +1,4 @@
 package com.faker.android;
-import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -7,10 +6,7 @@ import android.os.Message;
 import android.view.KeyEvent;
 import android.view.Window;
 import android.widget.ImageView;
-import android.widget.Toast;
 import {R};
-import org.json.JSONObject;
-import java.util.Map;
 
 public class FakerUnityActivity extends com.unity3d.player.UnityPlayerActivity {
     public native String init();

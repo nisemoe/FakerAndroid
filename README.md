@@ -28,7 +28,9 @@ A tool translate apk file to common android project and support so hook and incl
 - [下载地址](https://github.com/Efaker/FakerAndroid-Idea/releases/tag/FakerAndroid-Idea0.0.1)
 - 安装教程AndroidStudio File->Settings->plugins->setting->install from disk->重新启动AndroidStudio
 ##### 3、调试运行项目
+- AndroidStudio  Gradle->javaScaffoding->build->build
 - AndroidStudio->build->FakeSmali->等待smali文件构建完成
+
 - Run 项目（提醒：DEX缓存原因，修改smali文件后调试运行需要先卸载手机调试包）
 ##### 4、进阶
 - 借助javaScaffoding 使用java代码对smali 类继承  
