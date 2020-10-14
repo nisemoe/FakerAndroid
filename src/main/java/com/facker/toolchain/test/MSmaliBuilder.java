@@ -9,6 +9,7 @@ import org.antlr.runtime.RecognitionException;
 import org.jf.dexlib2.Opcodes;
 import org.jf.dexlib2.writer.builder.DexBuilder;
 import org.jf.dexlib2.writer.io.FileDataStore;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -20,16 +21,18 @@ public class MSmaliBuilder {
     private final ExtFile mSmaliDir;
     private final File mDexFile;
     private int mApiLevel = 0;
+    private File javaSrc;
     private static final Logger LOGGER = Logger.getLogger(SmaliBuilder.class.getName());
 
-    public static void build(ExtFile smaliDir, File dexFile, int apiLevel) throws AndrolibException {
-        (new MSmaliBuilder(smaliDir, dexFile, apiLevel)).build();
+    public static void build(ExtFile smaliDir, File dexFile, int apiLevel, File javaSrc) throws AndrolibException {
+        (new MSmaliBuilder(smaliDir, dexFile, apiLevel,javaSrc)).build();
     }
 
-    private MSmaliBuilder(ExtFile smaliDir, File dexFile, int apiLevel) {
+    private MSmaliBuilder(ExtFile smaliDir, File dexFile, int apiLevel, File javaSrc) {
         this.mSmaliDir = smaliDir;
         this.mDexFile = dexFile;
         this.mApiLevel = apiLevel;
+        this.javaSrc =javaSrc;
     }
 
     private void build() throws AndrolibException {
@@ -45,8 +48,13 @@ public class MSmaliBuilder {
 
             while(var2.hasNext()) {//TODO 过滤
                 String fileName = (String)var2.next();
-                //判断是否已经被复写...
-                // TODO
+                //System.out.println(fileName);
+                File fileJava = new File(javaSrc,fileName.replace(".smali",".java"));
+                //System.out.println(fileJava.getAbsolutePath());
+                if(fileJava.exists()){
+                    System.out.println(fileJava.getAbsolutePath());
+                    continue;
+                }
                 this.buildFile(fileName, dexBuilder);
             }
             dexBuilder.writeTo(new FileDataStore(new File(this.mDexFile.getAbsolutePath())));

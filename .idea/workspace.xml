@@ -697,10 +697,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602483085064" />
-    <state x="567" y="120" key="CommitChangelistDialog2" timestamp="1602584902198">
+    <state x="567" y="120" key="CommitChangelistDialog2" timestamp="1602664384148">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602584902198" />
+    <state x="567" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602664384148" />
+    <state x="240" y="94" key="DiffContextDialog" timestamp="1602664355951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="240" y="94" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602664355951" />
     <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1602558547521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -729,10 +733,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="98" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602508942396" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1602584903965">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1602664394450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602584903965" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602664394450" />
     <state x="652" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1602562012267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
