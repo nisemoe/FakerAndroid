@@ -31,10 +31,16 @@ A tool translate apk file to common android project and support so hook and incl
 - AndroidStudio->build->FakeSmali->等待smali文件构建完成
 - Run 项目（提醒：DEX缓存原因，修改smali文件后调试运行需要先卸载手机调试包）
 ##### 4、进阶
-- 借助javaScaffoding 使用java代码对smali 类继承
-- 借助FakeSmali 使用java代码对smali 类替换
+- 借助javaScaffoding 使用java代码对smali 类继承  
+  在javaScaffoding模块创建伪类,保持伪类类签名与要继承的类的smali文件路径名称对应->AndroidStudio右侧 Gradle->javaScaffoding->build->build,在主模块（app/src/main/java）中编写自己的类对伪类进行继承  
+- 借助FakeSmali 使用java代码对smali 类替换  
+  在主模块（app/src/main/java）编写自己的类，类签名与要替换的类的smali文件路径名称对应
 - 借助FakeCpp 使用jni对so函数进行hook替换
+        
+
 - 借助il2cpp Scaffolding 和FakeCpp,使用jni对il2cpp游戏脚本进行二次开发
+
+
 ##### 5、遇到问题了？兄弟别走肯定能用，而且是你最
 佳的解决方案，咨询探讨
 - QQ:1404774249
