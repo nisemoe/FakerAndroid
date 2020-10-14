@@ -35,7 +35,8 @@ A tool translate apk file to common android project and support so hook and incl
 - 借助FakeSmali 使用java代码对smali 类替换
 - 借助FakeCpp 使用jni对so函数进行hook替换
 - 借助il2cpp Scaffolding 和FakeCpp,使用jni对il2cpp游戏脚本进行二次开发
-##### 5、遇到问题了？兄弟别走肯定能用，而且是你最佳的解决方案，咨询探讨
+##### 5、遇到问题了？兄弟别走肯定能用，而且是你最
+佳的解决方案，咨询探讨
 - QQ:1404774249
 - issues(在线解决) 
 ##### 6、给个star?免费的           

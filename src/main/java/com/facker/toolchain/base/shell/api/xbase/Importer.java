@@ -74,6 +74,10 @@ public class Importer extends IImporter {
             ManifestEditor manifestEditor = new ManifestEditor(xSrcTarget.getManifestFile());
             FileUtil.autoReplaceStr(gameBuildGrandle,"{pkg}",manifestEditor.getPackagenName());
 
+            File fileSmail = xSrcTarget.getSmalis();
+            deleteR(manifestEditor.getPackagenName(),fileSmail);
+
+
             File MainA = new File(xSrcTarget.getJava(),"com\\faker\\android\\FakerUnityActivity.java");
             FileUtil.autoReplaceStr(MainA,"{R}",manifestEditor.getPackagenName()+".R");
 
@@ -172,6 +176,7 @@ public class Importer extends IImporter {
             }
             manifestEditor.modApplication("com.faker.android.FakerApp");//动态
             manifestEditor.save();
+
         } catch (DocumentException e) {
             e.printStackTrace();
         }
@@ -268,9 +273,24 @@ public class Importer extends IImporter {
 
             File file4 = new File(xSrcTarget.getDecodeDir(),"unknown");
             delete(file4);
+
+
         }
     }
 
+    public void deleteR(String pkg,File file) {
+        if (file.isDirectory()) {
+            File[] files = file.listFiles();
+            for (File f : files) {
+                deleteR(pkg,f);
+            }
+        }
+        String path = pkg.replace(".","\\");
+        String filePath = file.getAbsolutePath();
+        if(filePath.contains(path)&&(file.getName().startsWith("R$")||file.getName().equals("R.smali"))){
+            file.delete();
+        }
+    }
 
     public void delete(File file) {
         if (file.isDirectory()) {

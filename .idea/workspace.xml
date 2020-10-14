@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03edc19d-851e-4e2b-ae16-84f0811c93c2" name="Default Changelist" comment="init md">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_22_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_luhuiguo_chinese_utils_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/FakerMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/FakerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/beta/PathUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/beta/PathUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/beta/TestClassify.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/ApkSignerTool$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/ApkSignerTool$ParameterException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/ApkSignerTool$ProviderInstallSpec.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/ApkSignerTool$SignerParams.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/ApkSignerTool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/Constant$PATH.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/Constant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/DealApk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/FuckApk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/FuckApk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/HexEncoding.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/OptionsParser$OptionsException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/OptionsParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/PasswordRetriever.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/StaticInjector.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/mod/StaticInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/packer/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/packer/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/packer/Packer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/packer/SafeString.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/Logger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/ApkTool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/DecodeApk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/IImporter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/IWorker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/IWorkerAdapter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/Importer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/ManifestEditor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/ManifestEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/NetworkSecurityConfigEditor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/PathEditor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/PublicMerge$ID.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/PublicMerge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/PublicMerge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/ResMerge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/SourceCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/SrcDecodeApk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/SrcDecodeApk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/TextUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/ValuesMod.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/Worker$XFlip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/Worker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/WorkerAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/WorkerListener$ERRO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/WorkerListener$WORKER.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/WorkerListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/XBridge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/XMLMod.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/XModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/XSrcTarget$Signature.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/XSrcTarget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/XTarget$Signature.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/XTarget.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/YmlMod.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/YmlMod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/Check.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/CopyBridgeDex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/GatherFlip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/MergeBridgeAssets.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/MergeBridgeLib.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/MergeBridgeMainifest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/MergeBridgeRes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/MergeModelsAssets.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/MergeModelsLib.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/MergeModelsMainifest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/MergeModelsRes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/ModTargetLogo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/ModXTargetYml.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/action/OrlderXTargetAndXModelsDex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/impl/Downloader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/impl/McriptApi$Base64.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/impl/McriptApi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/impl/McriptZip$Base64.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/api/xbase/impl/McriptZip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscChunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscComplex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscDataType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscHeader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscParserTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscResStringPoolRef.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscResTableConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscResTableEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscResTypeSpec.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ArscTableType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/BuildAble.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/DefaultArscHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/ResType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/StringPoolReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/arsc/TablePackageType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/BinXmlHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/BinXmlParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/ByteUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/DefaultIdHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/GreplayXmlHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/IdHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/AttributeData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/AttributeType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/Chunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/ChunkTypeNumber.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/EndNameSpaceChunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/EndTagChunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/ResourceChunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/StartNameSpaceChunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/StartTagChunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/StringChunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/StringPool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/StringPoolImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/TagChunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/axml/struct/TextChunk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/shell/network/NetworkProcesser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/utils/IOUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/utils/SignUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/base/utils/ZipUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/test/MSmaliBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/test/SmaliTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/test/SplitApksMerge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/AaptApk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ApkSignerTool$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ApkSignerTool$ParameterException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ApkSignerTool$ProviderInstallSpec.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ApkSignerTool$SignerParams.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ApkSignerTool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ApkTool.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ApkUtils$FileInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ApkUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ApkUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/FileReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/FileUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/HexEncoding.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/IOUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/Logger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ManifestEditor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ManifestEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/OptionsParser$OptionsException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/OptionsParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/PasswordRetriever.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/SignUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/SystemUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/TextUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/facker/toolchain/utils/ZipUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facker/toolchain/FakerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facker/toolchain/FakerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facker/toolchain/base/shell/api/xbase/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facker/toolchain/base/shell/api/xbase/Importer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facker/toolchain/test/MSmaliBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facker/toolchain/test/MSmaliBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/facker/toolchain/test/SmaliTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/facker/toolchain/test/SmaliTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Efaker &lt;yzg_333@163.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Yang\Desktop\FakerAndroid\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ilWdxdsVPZTw4xD9tLXwvOr7lo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/patch/jniLibs" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.facker.toolchain.test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gitinit\FakerAndroid\patch\jniLibs" />
+      <recent name="D:\gitinit\FakerAndroid\patch\java\com\faker\android" />
+      <recent name="D:\gitinit\FakerAndroid\patch\cpp\include" />
+      <recent name="C:\Users\Yang\Desktop\FakerAndroid\patch\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SmaliTest">
+    <configuration name="FakerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.facker.toolchain.FakerMain" />
+      <module name="FakerAndroid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.facker.toolchain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Packer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.facker.toolchain.base.packer.Packer" />
+      <module name="FakerAndroid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.facker.toolchain.base.packer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmaliTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.facker.toolchain.test.SmaliTest" />
+      <module name="FakerAndroid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.facker.toolchain.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SmaliTest" />
+        <item itemvalue="Application.FakerMain" />
+        <item itemvalue="Application.Packer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03edc19d-851e-4e2b-ae16-84f0811c93c2" name="Default Changelist" comment="" />
+      <created>1602482749740</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602482749740</updated>
+      <workItem from="1602482752662" duration="2114000" />
+      <workItem from="1602488059822" duration="1911000" />
+      <workItem from="1602490066893" duration="526000" />
+      <workItem from="1602490610954" duration="3734000" />
+      <workItem from="1602508654200" duration="291000" />
+      <workItem from="1602508963502" duration="7507000" />
+      <workItem from="1602561993973" duration="19277000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1602482840075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602482840076</updated>
+    </task>
+    <task id="LOCAL-00002" summary="use common name">
+      <created>1602488606809</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602488606809</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init md">
+      <created>1602489558733</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602489558733</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init md">
+      <created>1602489716356</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602489716356</updated>
+    </task>
+    <task id="LOCAL-00005" summary="init md">
+      <created>1602490352997</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602490352997</updated>
+    </task>
+    <task id="LOCAL-00006" summary="init md">
+      <created>1602490418299</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602490418299</updated>
+    </task>
+    <task id="LOCAL-00007" summary="init md">
+      <created>1602490756641</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602490756641</updated>
+    </task>
+    <task id="LOCAL-00008" summary="init md">
+      <created>1602491228610</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602491228610</updated>
+    </task>
+    <task id="LOCAL-00009" summary="init md">
+      <created>1602491324933</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602491324933</updated>
+    </task>
+    <task id="LOCAL-00010" summary="init md">
+      <created>1602492546506</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602492546506</updated>
+    </task>
+    <task id="LOCAL-00011" summary="init md">
+      <created>1602492706929</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602492706929</updated>
+    </task>
+    <task id="LOCAL-00012" summary="init md">
+      <created>1602492819780</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602492819780</updated>
+    </task>
+    <task id="LOCAL-00013" summary="init md">
+      <created>1602492889384</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602492889384</updated>
+    </task>
+    <task id="LOCAL-00014" summary="init md">
+      <created>1602493296079</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602493296079</updated>
+    </task>
+    <task id="LOCAL-00015" summary="init md">
+      <created>1602493829861</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602493829861</updated>
+    </task>
+    <task id="LOCAL-00016" summary="init md">
+      <created>1602495334176</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1602495334176</updated>
+    </task>
+    <task id="LOCAL-00017" summary="init md">
+      <created>1602495630798</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1602495630798</updated>
+    </task>
+    <task id="LOCAL-00018" summary="init md">
+      <created>1602495981215</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1602495981215</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fix init bug">
+      <created>1602561360083</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1602561360083</updated>
+    </task>
+    <task id="LOCAL-00020" summary="init md">
+      <created>1602561542233</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1602561542233</updated>
+    </task>
+    <task id="LOCAL-00021" summary="init md">
+      <created>1602561635324</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1602561635324</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Res fix so abi">
+      <created>1602565053254</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1602565053254</updated>
+    </task>
+    <task id="LOCAL-00023" summary="usefull since history">
+      <created>1602579271537</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1602579271537</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix R file">
+      <created>1602580576276</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1602580576276</updated>
+    </task>
+    <task id="LOCAL-00025" summary="since history format">
+      <created>1602581654897</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1602581654897</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fakerdex bug fix">
+      <created>1602582013236</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1602582013236</updated>
+    </task>
+    <task id="LOCAL-00027" summary="init md">
+      <created>1602582389701</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1602582389701</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Efaker named">
+      <created>1602582477246</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1602582477246</updated>
+    </task>
+    <task id="LOCAL-00029" summary="init md">
+      <created>1602582682035</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1602582682035</updated>
+    </task>
+    <task id="LOCAL-00030" summary="init md">
+      <created>1602582732004</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1602582732004</updated>
+    </task>
+    <task id="LOCAL-00031" summary="init md">
+      <created>1602582880164</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1602582880164</updated>
+    </task>
+    <task id="LOCAL-00032" summary="init md">
+      <created>1602583290481</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1602583290481</updated>
+    </task>
+    <task id="LOCAL-00033" summary="md fix">
+      <created>1602583652396</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1602583652396</updated>
+    </task>
+    <task id="LOCAL-00034" summary="md format">
+      <created>1602583742660</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1602583742660</updated>
+    </task>
+    <task id="LOCAL-00035" summary="init md">
+      <created>1602583827268</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1602583827268</updated>
+    </task>
+    <task id="LOCAL-00036" summary="init md">
+      <created>1602583935894</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1602583935894</updated>
+    </task>
+    <task id="LOCAL-00037" summary="init md">
+      <created>1602584138007</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1602584138007</updated>
+    </task>
+    <task id="LOCAL-00038" summary="init md">
+      <created>1602584580314</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1602584580314</updated>
+    </task>
+    <task id="LOCAL-00039" summary="init md">
+      <created>1602584902912</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1602584902912</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <MESSAGE value="use common name" />
+    <MESSAGE value="Fix init bug" />
+    <MESSAGE value="Res fix so abi" />
+    <MESSAGE value="usefull since history" />
+    <MESSAGE value="fix R file" />
+    <MESSAGE value="since history format" />
+    <MESSAGE value="fakerdex bug fix" />
+    <MESSAGE value="Efaker named" />
+    <MESSAGE value="md fix" />
+    <MESSAGE value="md format" />
+    <MESSAGE value="init md" />
+    <option name="LAST_COMMIT_MESSAGE" value="init md" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="182" key="#Project_Structure" timestamp="1602508789917">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="182" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1602508789917" />
+    <state x="709" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602555724859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="709" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602555724859" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1602563130062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602563130062" />
+    <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1602483085064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602483085064" />
+    <state x="567" y="120" key="CommitChangelistDialog2" timestamp="1602584902198">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602584902198" />
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1602558547521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602558547521" />
+    <state width="1877" height="317" key="GridCell.Tab.0.bottom" timestamp="1602663936710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602663936710" />
+    <state width="1877" height="317" key="GridCell.Tab.0.center" timestamp="1602663936710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="317" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602663936710" />
+    <state width="1877" height="317" key="GridCell.Tab.0.left" timestamp="1602663936710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="317" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602663936710" />
+    <state width="1877" height="317" key="GridCell.Tab.0.right" timestamp="1602663936710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="317" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602663936710" />
+    <state x="600" y="224" key="NewModule_or_Project.wizard" timestamp="1602495512760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="600" y="224" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1602495512760" />
+    <state x="440" y="98" key="SettingsEditor" timestamp="1602508942396">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="98" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602508942396" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1602584903965">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602584903965" />
+    <state x="652" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1602562012267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="652" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602562012267" />
+    <state x="647" y="275" width="626" height="490" key="find.popup" timestamp="1602582424090">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="647" y="275" width="626" height="490" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602582424090" />
+    <state x="666" y="322" key="git4idea.merge.GitPullDialog" timestamp="1602490668749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="322" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602490668749" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1602488869664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602488869664" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602661266126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602661266126" />
+  </component>
+</project>
