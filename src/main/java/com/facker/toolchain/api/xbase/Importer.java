@@ -51,8 +51,10 @@ public class Importer extends IImporter {
     @Override
     boolean mergeSourceCode(SourceCode sourceCode, XSrcTarget xSrcTarget) throws IOException {
 
-        boolean isIl2cpp = true;
-
+        boolean isIl2cpp = false;
+        if(new File(xSrcTarget.getCpp(),"Scaffolding-ARM").exists()||new File(xSrcTarget.getCpp(),"Scaffolding-ARM64").exists()){
+            isIl2cpp = true;
+        }
         //拷贝cpp
         IOUtil.copyDir(sourceCode.getCpp(isIl2cpp),xSrcTarget.getCpp());
 
