@@ -1,8 +1,8 @@
 package com.facker.toolchain;
 
-import com.facker.toolchain.base.shell.api.xbase.Importer;
-import com.facker.toolchain.base.shell.api.xbase.SourceCode;
-import com.facker.toolchain.base.shell.api.xbase.XSrcTarget;
+import com.facker.toolchain.api.xbase.Importer;
+import com.facker.toolchain.api.xbase.SourceCode;
+import com.facker.toolchain.api.xbase.XSrcTarget;
 
 import java.io.File;
 import java.io.IOException;

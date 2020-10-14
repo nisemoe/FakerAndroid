@@ -3,7 +3,7 @@ package com.facker.toolchain.base.mod;
 
 import com.android.apksig.ApkVerifier;
 import com.facker.toolchain.base.utils.SignUtil;
-import com.facker.toolchain.base.shell.api.xbase.ApkTool;
+import com.facker.toolchain.api.xbase.ApkTool;
 
 import java.io.File;
 import java.util.ArrayList;

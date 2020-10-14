@@ -13,9 +13,10 @@ public class SmaliTest {
 
     public static void main(String[] args) {
 
-        String rootPath = "src\\main\\smalis";
+        String rootPath = "C:\\Users\\Yang\\Desktop\\apk\\juan-juan-bing-qi-lin\\juan-juan-bing-qi-lin\\app\\src\\main\\smalis";
         File smaliDirs[] = new File(rootPath).listFiles();
-        File apktoolYaml = new File("src\\main\\apktool.yml");
+        File apktoolYaml = new File("C:\\Users\\Yang\\Desktop\\apk\\juan-juan-bing-qi-lin\\juan-juan-bing-qi-lin\\app\\src\\main\\apktool.yml");
+        File javaSrc = new File("C:\\Users\\Yang\\Desktop\\apk\\juan-juan-bing-qi-lin\\juan-juan-bing-qi-lin\\app\\src\\main\\java");
         MetaInfo metaInfo = null;
         try {
             metaInfo = MetaInfo.load(new FileInputStream(apktoolYaml));
@@ -35,7 +36,7 @@ public class SmaliTest {
                     }
                     int targetSdkVersion = Integer.parseInt(metaInfo.sdkInfo.get("targetSdkVersion"));
                     System.out.println("targetSdkVersion "+targetSdkVersion);
-                    MSmaliBuilder.build(extFile,new File("src\\main\\assets\\classes"+endStuff),targetSdkVersion );
+                    MSmaliBuilder.build(extFile,new File("C:\\Users\\Yang\\Desktop\\apk\\juan-juan-bing-qi-lin\\juan-juan-bing-qi-lin\\app\\src\\main\\assets\\classes"+endStuff),targetSdkVersion,javaSrc);
                 } catch (AndrolibException e) {
                     e.printStackTrace();
                 }

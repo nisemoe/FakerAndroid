@@ -2,8 +2,8 @@ package com.facker.toolchain.base.mod;
 
 
 import com.facker.toolchain.base.utils.SignUtil;
-import com.facker.toolchain.base.shell.api.Logger;
-import com.facker.toolchain.base.shell.api.xbase.ApkTool;
+import com.facker.toolchain.utils.Logger;
+import com.facker.toolchain.api.xbase.ApkTool;
 
 import java.io.File;
 

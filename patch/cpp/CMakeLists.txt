@@ -5,15 +5,7 @@
 add_definitions(-DENABLE_DEBUG -DABC)
 cmake_minimum_required(VERSION 3.5)
 include_directories(src/main/cpp/include)
-
-if(${ANDROID_ABI} MATCHES "arm64-v8a")
-    file(GLOB Scaffolding "${CMAKE_SOURCE_DIR}/Scaffolding-ARM64/*.cpp")
-elseif(${ANDROID_ABI} MATCHES  "armeabi-v7a")
-    file(GLOB Scaffolding "${CMAKE_SOURCE_DIR}/Scaffolding-ARM/*.cpp")
-endif()
-
 file(GLOB native_srcc "${CMAKE_SOURCE_DIR}/*.cpp")
-
 add_library(
         swap #最终在build中生成的so名字
         SHARED
@@ -35,10 +27,7 @@ add_library( # Sets the name of the library.
         native-lib
         # Sets the library as a shared library.
         SHARED
-        # Provides a relative path to your source file(s).
         ${native_srcc}
-        ${Scaffolding}
-        ${Utils}
         )
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
