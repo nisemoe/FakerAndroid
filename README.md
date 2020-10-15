@@ -30,8 +30,7 @@ A tool translate apk file to common android project and support so hook and incl
 ##### 3、调试运行项目
 - AndroidStudio  Gradle->javaScaffoding->build->build
 - AndroidStudio->build->FakeSmali->等待smali文件构建完成
-
-- Run 项目（提醒：DEX缓存原因，修改smali文件后调试运行需要先卸载手机调试包）
+- Run 项目（提醒：DEX缓存原因，修改smali文件后调试运行需要先卸载手机调试包,另外il2cpp game apk 第一次编译脚手架会比较慢）
 ##### 4、进阶
 - 借助javaScaffoding 使用java代码对smali 类继承  
   在javaScaffoding模块创建伪类,保持伪类类签名与要继承的类的smali文件路径名称对应->AndroidStudio右侧 Gradle->javaScaffoding->build->build,在主模块（app/src/main/java）中编写自己的类对伪类进行继承  
