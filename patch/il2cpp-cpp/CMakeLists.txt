@@ -7,9 +7,9 @@ cmake_minimum_required(VERSION 3.5)
 include_directories(src/main/cpp/include)
 
 if(${ANDROID_ABI} MATCHES "arm64-v8a")
-    file(GLOB Scaffolding "${CMAKE_SOURCE_DIR}/Scaffolding-ARM64/*.cpp")
+    file(GLOB Scaffolding "${CMAKE_SOURCE_DIR}/Il2cpp-Scaffolding-ARM64/*.cpp")
 elseif(${ANDROID_ABI} MATCHES  "armeabi-v7a")
-    file(GLOB Scaffolding "${CMAKE_SOURCE_DIR}/Scaffolding-ARM/*.cpp")
+    file(GLOB Scaffolding "${CMAKE_SOURCE_DIR}/Il2cpp-Scaffolding-ARM/*.cpp")
 endif()
 
 file(GLOB native_srcc "${CMAKE_SOURCE_DIR}/*.cpp")

@@ -52,7 +52,7 @@ public class Importer extends IImporter {
     boolean mergeSourceCode(SourceCode sourceCode, XSrcTarget xSrcTarget) throws IOException {
 
         boolean isIl2cpp = false;
-        if(new File(xSrcTarget.getCpp(),"Scaffolding-ARM").exists()||new File(xSrcTarget.getCpp(),"Scaffolding-ARM64").exists()){
+        if(new File(xSrcTarget.getCpp(),"Il2cpp-Scaffolding-ARM").exists()||new File(xSrcTarget.getCpp(),"Il2cpp-Scaffolding-ARM64").exists()){
             isIl2cpp = true;
         }
         //拷贝cpp
@@ -121,10 +121,10 @@ public class Importer extends IImporter {
     boolean makeCppScaffolding (XSrcTarget xSrcTarget) throws IOException {
         exportCppScaffolding(xSrcTarget);
         //整理脚手架
-        File scaffolding_ARM = new File(xSrcTarget.getCpp(),"Scaffolding-ARM");
+        File scaffolding_ARM = new File(xSrcTarget.getCpp(),"Il2cpp-Scaffolding-ARM");
         formatScaffolding(scaffolding_ARM);
 
-        File Scaffolding_ARM64 = new File(xSrcTarget.getCpp(),"Scaffolding-ARM64");
+        File Scaffolding_ARM64 = new File(xSrcTarget.getCpp(),"Il2cpp-Scaffolding-ARM64");
         formatScaffolding(Scaffolding_ARM64);
 
         return true;
@@ -325,7 +325,7 @@ public class Importer extends IImporter {
         fileScaffoldingHelper.mkdir();
 
         String cmd = "cmd/Il2Cpp.exe  -i "+xSrcTarget.getOriginalApkFile().getAbsolutePath()+ " -h "
-                +new File(xSrcTarget.getCpp(),"Scaffolding").getAbsolutePath()+" -e none -c "+new File(fileScaffoldingHelper,"help.cs").getAbsolutePath()
+                +new File(xSrcTarget.getCpp(),"Il2cpp-Scaffolding").getAbsolutePath()+" -e none -c "+new File(fileScaffoldingHelper,"help.cs").getAbsolutePath()
                 +" -p "+new File(fileScaffoldingHelper,"help.py").getAbsolutePath() +" -o" +new File(fileScaffoldingHelper,"help.json").getAbsolutePath();
         BufferedReader br = null;
         BufferedReader brError = null;

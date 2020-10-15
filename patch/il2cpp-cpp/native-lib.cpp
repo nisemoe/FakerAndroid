@@ -5,11 +5,11 @@
 #include <sstream>
 #include "Constant.h"
 #if defined(__aarch64__)
-#include "Scaffolding-ARM64/il2cpp-init.h"
-    #include "Scaffolding-ARM64/il2cpp-appdata.h"
+#include "Il2cpp-Scaffolding-ARM64/il2cpp-init.h"
+#include "Il2cpp-Scaffolding-ARM64/il2cpp-appdata.h"
 #elif defined(__arm__)
-#include "Scaffolding-ARM/il2cpp-init.h"
-#include "Scaffolding-ARM/il2cpp-appdata.h"
+#include "Il2cpp-Scaffolding-ARM/il2cpp-init.h"
+#include "Il2cpp-Scaffolding-ARM/il2cpp-appdata.h"
 #endif
 using namespace std;
 #include "include/faker.h"
