@@ -13,7 +13,7 @@ A tool translate apk file to common android project and support so hook and incl
 - 无限的可能性和扩展性,能干啥你说了算~
 
 ### 运行环境
-- IntelliJ IDEA
+- Windows IntelliJ IDEA 
 ### 入口程序
 - com.facker.toolchain.FakerMain
 ### 使用方式
