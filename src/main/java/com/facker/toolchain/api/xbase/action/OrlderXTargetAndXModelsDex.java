@@ -8,7 +8,6 @@ import com.facker.toolchain.api.xbase.WorkerAction;
 import com.facker.toolchain.api.xbase.XModel;
 import com.facker.toolchain.api.xbase.XTarget;
 import org.dom4j.DocumentException;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.List;

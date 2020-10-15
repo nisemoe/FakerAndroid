@@ -45,7 +45,7 @@ bool installDex(JNIEnv* env, jobject jobject, string dexPath);
 
 
 /**
- * 安装多个普通DEX(合并)
+ * 安装多个普通DEX(非合并)
  * @param path
  * @return
  */
