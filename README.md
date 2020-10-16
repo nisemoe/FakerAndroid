@@ -3,7 +3,7 @@
 A tool translate apk file to common android project and support so hook and include il2cpp c++ scaffolding when apk is a il2cpp game apk
 ## 简介
 - 直接将Apk文件转换为可以进行二次开发的Android项目的工具,支持so hook,对于il2cpp的游戏apk直接生成il2cpp c++脚手架
-- 将痛苦的逆向环境，转化为舒服的开发环境，告别汇编，告别二进制，还有啥好说的~~！
+- 将痛苦的逆向环境，转化为舒服的开发环境，告别汇编，告别二进制，还有啥好说的~~ (比如把抖音改成快手，把快手改成抖音，做一个抖音快手版再做一个快手抖音版，好屌哦)
 ## 特点
 
 - 基于AndroidStudio进行smali修改编译
