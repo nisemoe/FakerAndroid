@@ -19,6 +19,5 @@ public class FakerCmd {
         }else {
             System.out.println("请输入apk文件路径");
         }
-
     }
 }
