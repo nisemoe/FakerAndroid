@@ -17,15 +17,30 @@
                     <target>8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.facker.toolchain.FakerCmd</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>assembly</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.*</include>
-                </includes>
-            </resource>
-        </resources>
     </build>
     <dependencies>
         <dependency>
@@ -52,6 +67,21 @@
             <groupId>com.luhuiguo</groupId>
             <artifactId>chinese-utils</artifactId>
             <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>apksigner</groupId>
+            <artifactId>apksigner</artifactId>
+            <scope>system</scope>
+            <version>1.0.0</version>
+            <systemPath>${project.basedir}/lib/apksigner.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>apktool</groupId>
+            <artifactId>apktool</artifactId>
+            <scope>system</scope>
+            <version>2.4.1</version>
+            <systemPath>${project.basedir}/lib/apktool_2.4.1.jar</systemPath>
         </dependency>
     </dependencies>
 
